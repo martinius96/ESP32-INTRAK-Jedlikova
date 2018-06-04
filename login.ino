@@ -2,8 +2,7 @@
 #include <WiFi.h>
 String line;
 const char* ssid = "INTRAK"; // wifi siet
-#define EAP_ID "meno.priezvisko" //eap identita a username je to iste 
-#define EAP_USERNAME "meno.priezvisko"
+#define EAP_IDENTITY "meno.priezvisko" //eap identita 
 #define EAP_PASSWORD "heslo" //heslo
 
 void setup() {
@@ -13,8 +12,8 @@ void setup() {
     Serial.print("Pripajam sa na: ");
     Serial.println(ssid);
     WiFi.disconnect(true); 
-    esp_wifi_sta_wpa2_ent_set_identity((uint8_t *)EAP_ID, strlen(EAP_ID));
-    esp_wifi_sta_wpa2_ent_set_username((uint8_t *)EAP_USERNAME, strlen(EAP_USERNAME));
+    esp_wifi_sta_wpa2_ent_set_identity((uint8_t *)EAP_IDENTITY, strlen(EAP_IDENTITY));
+    esp_wifi_sta_wpa2_ent_set_username((uint8_t *)EAP_IDENTITY, strlen(EAP_IDENTITY));
     esp_wifi_sta_wpa2_ent_set_password((uint8_t *)EAP_PASSWORD, strlen(EAP_PASSWORD));
     esp_wpa2_config_t config = WPA2_CONFIG_INIT_DEFAULT();
     esp_wifi_sta_wpa2_ent_enable(&config);

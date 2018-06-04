@@ -4,6 +4,7 @@ String line;
 const char* ssid = "INTRAK"; // wifi siet
 #define EAP_IDENTITY "meno.priezvisko" //eap identita 
 #define EAP_PASSWORD "heslo" //heslo
+#define MENOPC "MenoPCzUSERPANELU" //https://userpanel.pcklub.sk/
 
 void setup() {
     Serial.begin(115200);
@@ -20,7 +21,7 @@ void setup() {
    Serial.println("MAC adresa: ");
    Serial.println(WiFi.macAddress());
     WiFi.begin(ssid); //pripajanie
- WiFi.setHostname("MENOPC"); //hostname z userpanelu
+ WiFi.setHostname(MENOPC);
     while (WiFi.status() != WL_CONNECTED) {
         delay(500);
         Serial.print(".");

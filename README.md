@@ -1,6 +1,6 @@
 # ESP32-INTRAK-Jedlikova
 * Pripojenie na RADIUS server na sieti INTRAK --> Pripojenie na web
-* Skusane na Jedlikovej 9
+* Skúšané na Jedlikovej 9
 
 # Metódy overenia
 * 1. krok PEAP

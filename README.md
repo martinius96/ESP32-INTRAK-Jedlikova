@@ -1,12 +1,13 @@
 # ESP32-INTRAK-Jedlikova
-* Pripojenie na RADIUS server na sieti INTRAK --> Pripojenie na web
+* Pripojenie na sieť INTRAK a následné pripojenie na web
 * Skúšané na Jedlikovej 9
+* Funguje pod RADIUS serverom, pod TACACS-om nie.
 
 # Metódy overenia
 * 1. krok PEAP
 * 2. krok MsCHAPv2
 
-# Doska
+# Overená - testovacia doska
 * ESP32 Devkit v1 DOIT
 
 # Postup

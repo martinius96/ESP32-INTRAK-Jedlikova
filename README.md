@@ -2,6 +2,7 @@
 * Pripojenie na sieť INTRAK a následné pripojenie na web
 * Skúšané na Jedlikovej 9
 * Funguje pod RADIUS serverom, pod TACACS-om nie.
+* Test so službou FreeRADIUS fungoval, so Zeroshellom nie.
 
 # Metódy overenia
 * 1. krok PEAP

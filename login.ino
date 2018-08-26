@@ -12,7 +12,8 @@ void setup() {
     Serial.println();
     Serial.print("Pripajam sa na: ");
     Serial.println(ssid);
-    WiFi.disconnect(true); 
+    WiFi.disconnect(true);
+    WiFi.mode(WIFI_STA);
     esp_wifi_sta_wpa2_ent_set_identity((uint8_t *)EAP_IDENTITY, strlen(EAP_IDENTITY));
     esp_wifi_sta_wpa2_ent_set_username((uint8_t *)EAP_IDENTITY, strlen(EAP_IDENTITY));
     esp_wifi_sta_wpa2_ent_set_password((uint8_t *)EAP_PASSWORD, strlen(EAP_PASSWORD));
